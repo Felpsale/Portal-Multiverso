@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  #956f41;
+}
+.header {
+    position: relative;
+}
+
+.container{
+ 
+    width: 100%;
+    background: linear-gradient(to right, #956f41, #6b4a2d, #4c3824);
+    padding: 30px;
+}
+
+.container h1{
+
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Gotham';
+
+}
+
+  .menu ul {
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap;
+     gap: 30px 60px;
+    list-style: none;
+}
+  .menu a {
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+  
+  .menu a:hover,
+  .menu a:focus-visible {
+    color: #d8b27c;
+    text-decoration: underline;
+  }
+  
+.logo { 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.logo img{
+    height: 225px;
+}
+
+.article{
+display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+
+}
+
+.article img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.article h2 {
+    color: white;
+    font-family: "Gotham";
+    font-size: 60px;
+}
+.text p{
+    color: white;
+    font-family: "Gotham";
+    font-size: 40px;
+    text-align: justify;
+}
+    
