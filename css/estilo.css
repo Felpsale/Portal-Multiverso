@@ -1,85 +1,123 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background:  #956f41;
+
+body {
+    background: #956f41;
 }
+
 .header {
     position: relative;
 }
 
-.container{
- 
+.container {
     width: 100%;
     background: linear-gradient(to right, #956f41, #6b4a2d, #4c3824);
     padding: 30px;
 }
 
-.container h1{
-
+.container h1 {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 90px;
+    font-size: 90px; /* Ajustado de 90px para proportionalidade */
     color: #fff;
-    font-family: 'Gotham';
-
+    font-family: 'Gotham', sans-serif;
 }
 
-  .menu ul {
+.menu ul {
     display: flex;
     justify-content: center;
-     flex-wrap: wrap;
-     gap: 30px 60px;
+    flex-wrap: wrap;
+    gap: 20px 40px;
     list-style: none;
 }
-  .menu a {
+
+.menu a {
     color: #fff;
     font-family: "Gotham", sans-serif;
-    font-size: 3rem;
+    font-size: 40px; /* Ajustado de 3rem para não quebrar a navegação */
     text-decoration: none;
-  }
-  
-  .menu a:hover,
-  .menu a:focus-visible {
+}
+
+.menu a:hover,
+.menu a:focus-visible {
     color: #d8b27c;
     text-decoration: underline;
-  }
-  
+}
+
 .logo { 
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.logo img{
-    height: 225px;
+
+.logo img {
+    height: 220px; /* Reduzido levemente para alinhar com o cabeçalho */
 }
 
-.article{
-display: flex;
-    align-items: center;
+/* Layout Principal */
+.article {
+    display: flex;
+    align-items: flex-start; /* Alinha topo da galeria com o topo do texto */
     gap: 40px;
     padding: 50px;
-
 }
 
-.article img {
-    width: 600px;
-    height: 400px;
+/* Galeria Grid 2x2 */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex: 1; 
+    min-width: 450px; 
+}
+
+.card-imagem {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 300px;
     object-fit: cover;
+    display: block;
 }
 
+.card-imagem figcaption {
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 30px;
+    padding: 8px;
+    text-align: center;
+}
+.card-imagem figcaption#vigilante {
+    font-size: 50px; 
+    padding: 10px;
+}
+
+/* Seção de Texto */
+.text {
+    flex: 2;
+}
 
 .article h2 {
     color: white;
-    font-family: "Gotham";
-    font-size: 60px;
+    font-family: "Gotham", sans-serif;
+    font-size: 50px; /* Ajustado de 60px */
+    margin-bottom: 20px;
 }
-.text p{
+
+.text p {
     color: white;
-    font-family: "Gotham";
-    font-size: 40px;
+    font-family: "Gotham", sans-serif;
+    font-size: 30px; /* Ajustado de 40px para leitura padrão */
+    line-height: 1.6;  /* Melhora o espaçamento entre linhas */
     text-align: justify;
 }
-    
